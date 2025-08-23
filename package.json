@@ -1,0 +1,46 @@
+{
+  "name": "lazurd-services",
+  "version": "1.0.0",
+  "description": "موقع خدمات لازورد التعليمية والتقنية",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "echo 'Deploy to your hosting provider'",
+    "test": "echo 'Run tests if needed'",
+    "lint": "echo 'Lint HTML/CSS/JS files'",
+    "optimize": "echo 'Optimize images and assets'"
+  },
+  "keywords": [
+    "education",
+    "services",
+    "arabic",
+    "responsive",
+    "modern",
+    "tailwind",
+    "javascript"
+  ],
+  "author": "خدمات لازورد",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/lazurd-services.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/lazurd-services/issues"
+  },
+  "homepage": "https://yourdomain.com",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

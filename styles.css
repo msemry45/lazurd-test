@@ -1,0 +1,521 @@
+/* Custom CSS for Lazurd Services */
+
+/* Header Styles */
+header {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(229, 231, 235, 0.5) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+    transition: all 0.3s ease;
+}
+
+header:hover {
+    background: rgba(255, 255, 255, 0.98) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%) !important;
+}
+
+.dark-mode header {
+    background: rgba(26, 26, 46, 0.95) !important;
+    border-bottom: 1px solid rgba(75, 85, 99, 0.5) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode header:hover {
+    background: rgba(26, 26, 46, 0.98) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5,
+.dark-mode h6 {
+    color: #f3f4f6 !important;
+}
+
+.dark-mode p {
+    color: #d1d5db !important;
+}
+
+.dark-mode .text-gray-800 {
+    color: #f3f4f6 !important;
+}
+
+.dark-mode .text-gray-600 {
+    color: #d1d5db !important;
+}
+
+.dark-mode .text-gray-700 {
+    color: #e5e7eb !important;
+}
+
+.dark-mode .bg-white\/70,
+.dark-mode .bg-white\/80,
+.dark-mode .bg-white\/95 {
+    background: rgba(26, 26, 46, 0.7) !important;
+}
+
+.dark-mode .bg-white\/50 {
+    background: rgba(26, 26, 46, 0.5) !important;
+}
+
+.dark-mode .service-card,
+.dark-mode .service-preview-card > div,
+.dark-mode .service-detail {
+    background: rgba(26, 26, 46, 0.8) !important;
+    border: 1px solid rgba(75, 85, 99, 0.3) !important;
+}
+
+.dark-mode .bg-gray-50 {
+    background: rgba(31, 41, 55, 0.8) !important;
+}
+
+.dark-mode .bg-blue-50 {
+    background: rgba(30, 58, 138, 0.2) !important;
+}
+
+.dark-mode .bg-indigo-50 {
+    background: rgba(55, 48, 163, 0.2) !important;
+}
+
+.dark-mode .bg-purple-50 {
+    background: rgba(88, 28, 135, 0.2) !important;
+}
+
+.dark-mode .bg-green-50 {
+    background: rgba(20, 83, 45, 0.2) !important;
+}
+
+.dark-mode .bg-pink-50 {
+    background: rgba(157, 23, 77, 0.2) !important;
+}
+
+/* Dark mode transitions */
+body {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode * {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode specific improvements */
+.dark-mode .btn-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%) !important;
+    color: white !important;
+}
+
+.dark-mode .whatsapp-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    color: white !important;
+}
+
+.dark-mode .gradient-text {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+/* Dark mode footer */
+.dark-mode footer {
+    background: #111827 !important;
+}
+
+.dark-mode footer .text-gray-300 {
+    color: #d1d5db !important;
+}
+
+.dark-mode footer .text-gray-400 {
+    color: #9ca3af !important;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .theme-toggle-btn {
+    background: rgba(75, 85, 99, 0.3);
+    border: 1px solid rgba(75, 85, 99, 0.5);
+}
+
+.theme-toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.dark-mode .theme-toggle-btn:hover {
+    background: rgba(75, 85, 99, 0.5);
+}
+
+/* Font Family */
+.font-cairo {
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Modern 3D Effects */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.25);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.neumorphism {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+/* Hover Effects */
+.service-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-preview-card:hover {
+    transform: translateY(-3px) scale(1.02);
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .text-5xl {
+        font-size: 2.5rem;
+    }
+    
+    .text-4xl {
+        font-size: 2rem;
+    }
+    
+    header {
+        backdrop-filter: blur(15px) !important;
+        -webkit-backdrop-filter: blur(15px) !important;
+    }
+}
+
+/* Ensure content doesn't overlap with header */
+main {
+    padding-top: 1rem;
+}
+
+.hero-section {
+    padding-top: 2rem;
+}
+
+/* Loading Animation */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.9);
+    color: #667eea;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px solid #667eea;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Card Styles */
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+}
+
+/* Breadcrumb Styles */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.breadcrumb a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #764ba2;
+}
+
+.breadcrumb .separator {
+    color: #ccc;
+}
+
+/* Service Detail Styles */
+.service-detail {
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail h3 {
+    color: #667eea;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.service-detail h3::before {
+    content: '';
+    width: 4px;
+    height: 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 2px;
+}
+
+/* FAQ Styles */
+.faq-item {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-question {
+    padding: 20px;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    cursor: pointer;
+    font-weight: 600;
+    color: #374151;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+}
+
+.faq-answer {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.faq-answer.active {
+    padding: 20px;
+    max-height: 200px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 100px;
+}
+
+.dark-mode .sidebar {
+    background: rgba(26, 26, 46, 0.9) !important;
+    border: 1px solid rgba(75, 85, 99, 0.3) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark-mode .sidebar h3,
+.dark-mode .sidebar h4,
+.dark-mode .sidebar h5,
+.dark-mode .sidebar h6 {
+    color: #f3f4f6 !important;
+}
+
+.dark-mode .sidebar p {
+    color: #d1d5db !important;
+}
+
+.dark-mode .sidebar .text-gray-600 {
+    color: #d1d5db !important;
+}
+
+.dark-mode .sidebar .text-gray-700 {
+    color: #e5e7eb !important;
+}
+
+.dark-mode .sidebar .text-gray-800 {
+    color: #f3f4f6 !important;
+}
+
+/* Grid Layout */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 32px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sidebar {
+        position: static;
+        margin-top: 24px;
+    }
+}
+
+/* Custom Focus Styles */
+button:focus,
+a:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .card,
+    .service-detail {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+}
