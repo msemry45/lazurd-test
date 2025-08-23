@@ -426,12 +426,32 @@ function contactWhatsApp(key, serviceTitle) {
     const number = getWhatsAppNumber(key);
     const message = encodeURIComponent(`مرحبا، مهتم بـ ${serviceTitle}`);
     const url = `https://wa.me/${number}?text=${message}`;
+    
+    // Track WhatsApp click event
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'whatsapp_click', {
+            'event_category': key,
+            'event_label': serviceTitle,
+            'value': 1
+        });
+    }
+    
     window.open(url, '_blank');
 }
 
 // View service details function
 function viewServiceDetails(serviceId) {
     console.log('Viewing service details for:', serviceId);
+    
+    // Track service view event
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'service_view', {
+            'event_category': 'service_details',
+            'event_label': serviceId,
+            'value': 1
+        });
+    }
+    
     const url = new URL(window.location);
     url.searchParams.set('service', serviceId);
     window.location.href = url.toString();
