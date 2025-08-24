@@ -407,6 +407,10 @@ main {
     transition: all 0.3s ease;
 }
 
+.dark-mode .faq-item {
+    background: rgba(26, 26, 46, 0.8) !important;
+}
+
 .faq-question {
     padding: 20px;
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
@@ -416,8 +420,17 @@ main {
     transition: all 0.3s ease;
 }
 
+.dark-mode .faq-question {
+    background: linear-gradient(135deg, #374151 0%, #1f2937 100%) !important;
+    color: #f9fafb !important;
+}
+
 .faq-question:hover {
     background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+}
+
+.dark-mode .faq-question:hover {
+    background: linear-gradient(135deg, #4b5563 0%, #374151 100%) !important;
 }
 
 .faq-answer {
@@ -426,6 +439,10 @@ main {
     overflow: hidden;
     transition: all 0.3s ease;
     background: white;
+}
+
+.dark-mode .faq-answer {
+    background: rgba(31, 41, 55, 0.9) !important;
 }
 
 .faq-answer.active {
@@ -440,7 +457,8 @@ main {
 }
 
 .dark-mode .faq-question span {
-    color: #f3f4f6 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
 }
 
 .faq-answer p {
@@ -450,7 +468,8 @@ main {
 }
 
 .dark-mode .faq-answer p {
-    color: #e5e7eb !important;
+    color: #f3f4f6 !important;
+    font-weight: 500 !important;
 }
 
 /* Footer Styles */
